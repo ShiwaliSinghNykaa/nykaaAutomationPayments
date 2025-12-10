@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-current.dtd">
+<suite name="Android CC PayU Test Suite" verbose="2">
+    <test name="Android CC PayU Tests" preserve-order="true">
+        <parameter name="platform" value="android"/>
+        <classes>
+            <class name="com.browserstack.tests.android.CC_Payu_Sanity"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+</suite>

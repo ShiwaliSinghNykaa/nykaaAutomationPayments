@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-current.dtd">
+<suite name="Android COD Test Suite" verbose="1">
+    <test name="Android COD Tests" preserve-order="true">
+        <parameter name="platform" value="android"/>
+        <classes>
+            <class name="com.browserstack.tests.android.COD_Sanity"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <!-- iOS Test Suite -->
+    <!-- <test name="iOS Tests" preserve-order="true">
+        <parameter name="platform" value="ios"/>
+        <classes>
+            <class name="com.browserstack.appium.tests.ios.IOSSampleTest"/>
+        </classes>
+    </test> -->
+
+</suite>
